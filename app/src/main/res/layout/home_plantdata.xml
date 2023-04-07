@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--植物item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_plant_data"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/home_plant_data_background">
+    <!--植物图片-->
+    <ImageView
+        android:id="@+id/plant_item_image"
+        android:scaleType="fitXY"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+
+        />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="10dp">
+            <LinearLayout
+                android:id="@+id/First"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--植物名称-->
+                <TextView
+                    android:id="@+id/plant_item_name"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0"
+                    android:text=""
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/black"
+
+                    />
+                <!--修改植物名称按钮-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/modify_plantname"
+                    android:background="@android:color/transparent"
+                    />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <!--删除设备按钮-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/delete_plant"
+                    android:background="@android:color/transparent"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Second"
+                android:layout_below="@id/First"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <!--数据更新时间-->
+                <TextView
+                    android:id="@+id/plant_item_updatetime"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="left"
+                    android:text="2023.4.6"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Third"
+                android:layout_width="match_parent"
+                android:layout_height="22.5dp"
+                android:layout_below="@id/Second"
+                android:orientation="horizontal">
+                <!--温度-->
+                <TextView
+                    android:id="@+id/plant_item_temperature"
+                    android:layout_width="0dp"
+                    android:layout_height="22.5dp"
+                    android:layout_weight="1"
+                    android:text="温度"
+                   />
+
+                <TextView
+                    android:id="@+id/plant_item_temperature_value"
+                    android:layout_width="0dp"
+                    android:layout_height="22.5dp"
+                    android:layout_weight="1"
+                   />
+                <!--湿度-->
+                <TextView
+                    android:id="@+id/plant_item_humidity"
+                    android:layout_width="0dp"
+                    android:layout_height="22.5dp"
+                    android:layout_weight="1"
+                    android:text="湿度"
+                   />
+
+                <TextView
+                    android:id="@+id/plant_item_humidity_value"
+                    android:layout_width="0dp"
+                    android:layout_height="22.5dp"
+                    android:layout_weight="1"
+                   />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/third_layer"
+                android:layout_width="match_parent"
+                android:layout_height="22.5dp"
+                android:layout_below="@id/Third"
+                android:orientation="horizontal"
+                >
+                <!--光照-->
+                <TextView
+                    android:id="@+id/plant_item_illumination"
+                    android:layout_width="0dp"
+                    android:layout_height="22.5dp"
+                    android:layout_weight="1"
+                    android:text="光照"
+                    />
+
+                <TextView
+                    android:id="@+id/plant_item_illumination_value"
+                    android:layout_width="0dp"
+                    android:layout_height="22.5dp"
+                    android:layout_weight="1"
+                    />
+                <!--PH值-->
+                <TextView
+                    android:id="@+id/plant_item_ph"
+                    android:layout_width="0dp"
+                    android:layout_height="22.5dp"
+                    android:layout_weight="1"
+                    android:text="pH"
+                    />
+
+                <TextView
+                    android:id="@+id/plant_item_ph_value"
+                    android:layout_width="0dp"
+                    android:layout_height="22.5dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
